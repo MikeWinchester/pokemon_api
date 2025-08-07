@@ -7,8 +7,8 @@ sudo docker run -d -p 8000:8000 --name pokeapi-container --env-file .env --platf
 sudo az acr login --name acrpokequeuedevv1
 
 sudo docker tag pokeapi:latest acrpokequeuedevv1.azurecr.io/pokeapi:latest
-sudo docker tag pokeapi:latest acrpokequeuedevv1.azurecr.io/pokeapi:0.0.0
+sudo docker tag pokeapi:latest acrpokequeuedevv1.azurecr.io/pokeapi:0.1.0
 
 sudo docker push acrpokequeuedevv1.azurecr.io/pokeapi:latest
-sudo docker push acrpokequeuedevv1.azurecr.io/pokeapi:0.0.0
+sudo docker push acrpokequeuedevv1.azurecr.io/pokeapi:0.1.0
 
